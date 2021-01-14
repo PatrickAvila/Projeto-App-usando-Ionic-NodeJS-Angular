@@ -1,0 +1,1 @@
+Pra rodar esse projeto é necessário ter o ionic, nodeJS e Angular baixado na maquina.

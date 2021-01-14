@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ultimas Notícias</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="efeitoRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+   <ion-card *ngFor="let filme of lista_filmes">
+     <ion-card-header>
+       <ion-img [src]="filme.urlToImage"></ion-img>
+       <ion-card-subtitle>{{filme.author}}</ion-card-subtitle>
+       <ion-card-title>{{filme.title}}</ion-card-title>
+     </ion-card-header>
+     <ion-card-content>
+      {{filme.description}}
+     </ion-card-content>
+   </ion-card>  
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="efeitoScrolInfinito($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Carregando mais Notícias">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

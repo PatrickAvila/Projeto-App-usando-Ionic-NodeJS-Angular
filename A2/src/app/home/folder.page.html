@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button size="small" color="dark" (click)="sair()">
+      <ion-icon name="exit"></ion-icon>
+    </ion-fab-button>
+  </ion-fab> -->
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title size="larger">Bem-Vindo ao VascoNews!</ion-card-title>
+      <ion-card-subtitle>Aplicativo com intuito de trazer as ultimas notícias do Clube de Regatas Vasco da Gama</ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="assets/vasco.jpg"></ion-img>
+  </ion-card> 
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title size="larger">Desenvolvido por Patrick Avila</ion-card-title>
+      <ion-card-subtitle>Estudante de Ciência da Computação e um torcedor fanático do Clube de Regatas Vasco da Gama</ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="assets/patrick.jpeg"></ion-img>
+  </ion-card> 
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title size="larger">APP desenvolvido usando Ionic native, cordova e o framework Angular</ion-card-title>
+      <ion-card-subtitle>Deu muito trabalho hein!! rsrs</ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="assets/cordova-ng-ionic.png"></ion-img>
+  </ion-card> 
+
+</ion-content>

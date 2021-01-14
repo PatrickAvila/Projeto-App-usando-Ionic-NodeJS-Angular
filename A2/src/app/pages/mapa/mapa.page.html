@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>Localização em Tempo Real</ion-title> -->
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-searchbar placeholder="Para onde?" (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div #map id="map"></div>
+  
+  <!-- &libraries=places -->
+</ion-content>
